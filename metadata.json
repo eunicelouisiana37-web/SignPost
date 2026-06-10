@@ -1,5 +1,5 @@
 {
-  "name": "SignPost",
+  "name": "Staff Attendance Tracker",
   "description": "Workplace staff attendance system with geofencing, out-of-bounds approvals, overtime calculation, payroll insights, and report exports.",
   "requestFramePermissions": ["geolocation"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
