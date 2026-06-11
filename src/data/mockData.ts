@@ -1,4 +1,4 @@
-import { StaffMember, AttendanceRecord, WorkingLocation, ManagerNotification } from '../types';
+import { StaffMember, AttendanceRecord, WorkingLocation, ManagerNotification, ObservedHoliday } from '../types';
 
 export const INITIAL_LOCATIONS: WorkingLocation[] = [
   {
@@ -33,7 +33,7 @@ export const INITIAL_STAFF: StaffMember[] = [
     role: 'Employee',
     hourlyRate: 3500, // ₦3,500/hr
     overtimeRate: 5250, // ₦5,250/hr (1.5x)
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Eunice%20Louisiana&backgroundColor=1A3C6E&textColor=ffffff',
   },
   {
     id: 'staff-2',
@@ -43,7 +43,7 @@ export const INITIAL_STAFF: StaffMember[] = [
     role: 'Employee',
     hourlyRate: 2800,
     overtimeRate: 4200,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Chinedu%20Okafor&backgroundColor=1A3C6E&textColor=ffffff',
   },
   {
     id: 'staff-3',
@@ -53,7 +53,7 @@ export const INITIAL_STAFF: StaffMember[] = [
     role: 'Manager',
     hourlyRate: 4500,
     overtimeRate: 6750,
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Tunde%20Bakare&backgroundColor=1A3C6E&textColor=ffffff',
   },
   {
     id: 'staff-4',
@@ -63,7 +63,7 @@ export const INITIAL_STAFF: StaffMember[] = [
     role: 'Admin',
     hourlyRate: 5000,
     overtimeRate: 7500,
-    avatar: 'https://images.unsplash.com/photo-1534751516642-a131ffd1037f?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Halima%20Yusuf&backgroundColor=1A3C6E&textColor=ffffff',
   },
   {
     id: 'staff-5',
@@ -73,7 +73,7 @@ export const INITIAL_STAFF: StaffMember[] = [
     role: 'Employee',
     hourlyRate: 3000,
     overtimeRate: 4500,
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Blessing%20Emmanuel&backgroundColor=1A3C6E&textColor=ffffff',
   }
 ];
 
@@ -199,4 +199,12 @@ export const INITIAL_NOTIFICATIONS: ManagerNotification[] = [
     read: false,
     status: 'Approved'
   }
+];
+
+export const INITIAL_HOLIDAYS: ObservedHoliday[] = [
+  { id: 'hol-1', name: "New Year's Day", date: '2026-01-01' },
+  { id: 'hol-2', name: "Workers' Day", date: '2026-05-01' },
+  { id: 'hol-3', name: "Democracy Day", date: '2026-06-12' },
+  { id: 'hol-4', name: "National Independence Day", date: '2026-10-01' },
+  { id: 'hol-5', name: "Christmas Day", date: '2026-12-25' }
 ];

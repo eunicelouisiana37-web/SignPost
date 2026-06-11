@@ -35,6 +35,13 @@ export interface AttendanceRecord {
   notes?: string;
   approvedBy?: string;
   approvedAt?: string;
+  isHoliday?: boolean;
+}
+
+export interface ObservedHoliday {
+  id: string;
+  name: string;
+  date: string; // YYYY-MM-DD
 }
 
 export interface WorkingLocation {
